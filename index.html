@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Website</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">My Portfolio</div>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Home Section -->
+  <section id="home" class="section">
+    <div class="home-container">
+      <div class="home-content">
+        <h1>Hello, I'm <span>Pranay Verma</span></h1>
+        <p>A passionate web developer creating impactful solutions.</p>
+        <button onclick="scrollToSection('about')">Learn More</button>
+      </div>
+      <div class="home-photo">
+        <img src="https://avatars.githubusercontent.com/u/173799331?v=4" alt="Your Name" />
+      </div>
+    </div>
+  </section>
+
+  <!-- About Me Section -->
+  <section id="about" class="section">
+    <div class="aboutContainer">
+    <h1>About Me</h1>
+    <p>
+      Hi there! I'm a Tech Enthusiast student pursuing Computer Engineering from Mumbai University Affiliated college Shree L.R. Tiwari College of Engineering currently in 2nd Year. I have experience in web development using modern frameworks like React and Tailwind CSS. I like to Learn about new technologies.
+    </p>
+    </div>
+    <h4>SKILLS</h4>
+    <ul>
+        <li>C Programming</li>
+        <li>Java</li>
+        <li>HTML, CSS</li>
+        <li>JavaScript(React.js)</li>
+    </ul>
+    <h4>Competitions</h4>
+    <ul>
+      <li>Hackathons: Participated in Hackwarts</li>
+    </ul>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section">
+    <h2>Projects</h2>
+    <div class="project-card">
+      <h3>Educational Platform(Group Project)</h3>
+      <p>Educational platform for making study materials available</p>
+      <a href="https://devteamproject.vercel.app/">View Project</a>
+    </div>
+    <div class="project-card">
+      <h3>Blog Wiki Management System(Group Project)</h3>
+      <p>A system to efficiently manage content.</p>
+      <a href="https://devninjas.vercel.app/">View Project</a>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section">
+    <h2>Contact Me</h2>
+    <form id="contact-form">
+      <input type="text" placeholder="Name" required>
+      <input type="email" placeholder="Email" required>
+      <textarea placeholder="Message" required></textarea>
+      <button type="submit" id="submit">Send</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2024 Your Name. All rights reserved.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
