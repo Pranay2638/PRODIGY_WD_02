@@ -9,4 +9,8 @@ function scrollToSection(id) {
     e.preventDefault();
     alert("Thank you! Your message has been sent.");
   });
+  function toggleMenu() {
+    const navMenu = document.querySelector("nav ul");
+    navMenu.classList.toggle("show");
+  }
   

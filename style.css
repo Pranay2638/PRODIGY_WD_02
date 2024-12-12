@@ -29,21 +29,67 @@ body {
   
   nav .logo {
     font-size: 1.5rem;
+    color: #fff;
   }
   
   nav ul {
     list-style: none;
     display: flex;
-  }
-  
-  nav ul li {
-    margin-left: 20px;
+    gap: 20px;
   }
   
   nav ul li a {
     text-decoration: none;
     color: #fff;
     font-weight: bold;
+  }
+  
+  /* Hide navigation menu on smaller screens */
+  @media (max-width: 768px) {
+    nav ul {
+      display: none; /* Hide the menu by default */
+      flex-direction: column; /* Stack menu items vertically when displayed */
+      position: absolute;
+      top: 60px; /* Adjust based on header height */
+      right: 1rem;
+      background-color: #333; /* Background for dropdown menu */
+      padding: 10px;
+      border-radius: 5px;
+    }
+  
+    nav ul li {
+      margin: 10px 0;
+    }
+  
+    /* Show menu when active */
+    nav ul.show {
+      display: flex;
+    }
+  
+    /* Add a hamburger icon */
+    .hamburger {
+      display: block;
+      cursor: pointer;
+    }
+  
+    .hamburger span {
+      display: block;
+      width: 25px;
+      height: 3px;
+      background: #fff;
+      margin: 5px 0;
+    }
+  }
+  
+  /* Default behavior on larger screens */
+  @media (min-width: 769px) {
+    .hamburger {
+      display: none; /* Hide the hamburger icon */
+    }
+  
+    nav ul {
+      display: flex; /* Always show the menu on larger screens */
+    }
   }
   
   /* Section Styling */
